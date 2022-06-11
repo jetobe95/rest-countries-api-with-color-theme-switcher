@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.theme-light {
+  --font-color: #111517;
+  --header-bg: white;
+  --placeholder: rgba(132, 132, 132, 1);
+  --surface-color: white;
+  --bg-color: #F2F2F2;
+  /* ICONS */
+  --moon: url(../images/moon-bordered.svg);
+  --search: url(../images/search.svg);
+  --arrow-down: url(../images/arrow_down_black.svg);
+}
+
+.theme-dark {
+  --font-color: white;
+  --header-bg: #2B3844;
+  --placeholder: white;
+  --surface-color: #2B3844;
+  --bg-color: #202C36;
+  /* ICONS */
+  --moon: url(../images/moon-white.svg);
+  --search: url(../images/search_white.svg);
+  --arrow-down: url(../images/arrow_down_white.svg);
+}
+
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  color: var(--font-color);
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--bg-color);
+}
+
+body {
+  margin: 0;
+}
