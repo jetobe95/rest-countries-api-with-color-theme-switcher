@@ -15,6 +15,7 @@
   --moon: url(../images/moon-bordered.svg);
   --search: url(../images/search.svg);
   --arrow-down: url(../images/arrow_down_black.svg);
+  --call-made: url(../images/call-made-black.svg)
 }
 
 .theme-dark {
@@ -27,6 +28,7 @@
   --moon: url(../images/moon-white.svg);
   --search: url(../images/search_white.svg);
   --arrow-down: url(../images/arrow_down_white.svg);
+  --call-made: url(../images/call-made-white.svg)
 }
 
 
