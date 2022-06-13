@@ -1,12 +1,16 @@
 import { PropsWithChildren } from "react";
-import { Country } from "../App";
 import { Link } from "react-router-dom";
+import Country from "../models/country";
 
 export default function CountryItem({
   country,
 }: PropsWithChildren<{ country: Country }>) {
   return (
-    <Link replace={false} to={"detail/123"} className="country__item">
+    <Link
+      replace={false}
+      to={`detail/${country.name}`}
+      className="country__item"
+    >
       <img
         loading="lazy"
         className="country__item__flag"
@@ -17,8 +21,7 @@ export default function CountryItem({
       <div className="country__info">
         <h2 className="country__info__title">{country.name}</h2>
         <p className="country__info__item">
-          <strong>Population: </strong>{" "}
-          {Intl.NumberFormat().format(country.population)}
+          <strong>Population: </strong> {country.presentablePopulation}
         </p>
         <p className="country__info__item">
           <strong>Region: </strong>

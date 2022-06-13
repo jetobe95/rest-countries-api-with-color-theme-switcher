@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ThemeProvider } from "./App";
 import { BrowserRouter } from "react-router-dom";
-
 import App from "./App";
+import { ThemeProvider } from "./hooks/themeProvider";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

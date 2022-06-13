@@ -1,4 +1,4 @@
-import { useTheme } from "../App";
+import { useTheme } from "../hooks/themeProvider";
 
 export default function Header() {
   const { toggleTheme } = useTheme();
