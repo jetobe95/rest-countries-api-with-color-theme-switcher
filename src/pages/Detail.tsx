@@ -41,7 +41,7 @@ class CountryDetail {
   public topLevelDomain?: string;
   public currencies: string[];
   public languages: string[];
-  public borders: string[];
+  public borders?: string[];
 
   constructor(
     public countryBase: Country,
@@ -142,7 +142,7 @@ export default function Detail() {
           <section className="bordercountries__container">
             <h2 className="detail__bordercountries">Border Countries:</h2>
             <footer className="actions">
-              {countryDetail.borders.map((borderName) => (
+              {countryDetail.borders?.map((borderName) => (
                 <button
                   key={borderName}
                   className="detail__bordercountries__btn"
